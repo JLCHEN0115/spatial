@@ -1,2 +1,1 @@
-# spatial
-Spatial Statistics/Econometrics
+# Spatial Statistics/Econometrics
