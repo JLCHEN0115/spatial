@@ -101,7 +101,7 @@ wi_compare_plot <- wi_compare %>%
   geom_histogram() + 
   facet_wrap(~metro_name) +
   labs(
-    title = "Finite Sample Distributions of Househols Income Median", 
+    title = "Households Income Medians in 2019", 
     caption = "Data: US Census Bureau"
   ) 
 
