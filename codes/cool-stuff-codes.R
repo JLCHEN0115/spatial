@@ -60,3 +60,46 @@ wi_income_plot <- wi_income %>%
      ) 
 
 wi_income_plot
+
+# Now, compare median incomes for downtown Madison and 
+# Milwaukee (a great city with an amazing basketball team)
+
+mad_mil = 
+  tigris::core_based_statistical_areas(cb = TRUE) %>%
+  filter(grepl("Madison, WI|Milwaukee", NAME)) %>%
+  filter(grepl("OR", NAME)) %>%
+  select(metro_name = NAME)
+
+mad_mil
+
+# Now, we get tract level data 
+#The "Census Tract" is an area roughly equivalent to a neighborhood established by 
+# the Bureau of Census for analyzing populations.
+wi_tract_income <- get_acs(
+  geography = "tract", # county before
+  variables = "B19013_001", # Searching for variable IDs is usually painful. 
+  #load_variable() is an option, also use https://censusreporter.org/
+  state = "WI",
+  year = 2019,
+  geometry = TRUE
+)
+
+# Do a spatial join on our two data sets using the sf::st_join() function.
+wi_compare = 
+  st_join(
+    wi_tract_income, 
+    mad_mil,
+    join = st_within, left = FALSE
+  )
+
+# Draw a histogram to compare across metros.
+wi_compare %>%
+  ggplot(aes(x = estimate)) + 
+  geom_histogram() + 
+  facet_wrap(~metro_name) +
+  labs(
+    title = "Finite Sample Distributions of Househols Income Median", 
+    caption = "Data: US Census Bureau"
+  ) 
+
+wi_compare
