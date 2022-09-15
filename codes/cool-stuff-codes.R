@@ -32,6 +32,7 @@ wi_area_plot <- ggplot(wi_area) +
        caption = "Data: UW-Madison Robinson Map Library"
      )
 
+wi_area_plot
 ###############################################################################
 # add settings to optimize use with the sf package
 options(tigris_class = "sf") 
@@ -70,7 +71,6 @@ wi_income_plot
 mad_mil = 
   tigris::core_based_statistical_areas(cb = TRUE) %>%
   filter(grepl("Madison, WI|Milwaukee", NAME)) %>%
-  filter(grepl("OR", NAME)) %>%
   select(metro_name = NAME)
 
 mad_mil
