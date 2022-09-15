@@ -16,6 +16,8 @@ wi_shape_plot <- ggplot(data = wi_shape) +
     caption = "Data: UW-Madison Robinson Map Library"
   )
 
+wi_shape_plot
+
 # Output the plot with higher resolution
 # ggsave("wi_shape_plot.png", plot = wi_shape_plot, dpi = 300) 
 
