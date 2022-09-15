@@ -16,6 +16,9 @@ wi_shape_plot <- ggplot(data = wi_shape) +
     caption = "Data: UW-Madison Robinson Map Library"
   )
 
+# Output the plot with higher resolution
+# ggsave("wi_shape_plot.png", plot = wi_shape_plot, dpi = 300) 
+
 # Wrangle the data to plot area information (in 1000 Square Kilometer)
 wi_area <- wi_shape %>%
     mutate(AREA = ALAND/1000000000) # Create a new variable
@@ -93,7 +96,7 @@ wi_compare =
   )
 
 # Draw a histogram to compare across metros.
-wi_compare %>%
+wi_compare_plot <- wi_compare %>%
   ggplot(aes(x = estimate)) + 
   geom_histogram() + 
   facet_wrap(~metro_name) +
@@ -102,4 +105,4 @@ wi_compare %>%
     caption = "Data: US Census Bureau"
   ) 
 
-wi_compare
+wi_compare_plot
