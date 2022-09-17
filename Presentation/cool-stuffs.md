@@ -146,9 +146,9 @@ wi_income_plot
 
 <img src="/Figures/wi_income_plot.png" width = 65% height = 65%>
 
-That is great, but maybe "too much." Maybe we are only interested in comparing some of the *Metropolitan Aeras(MAs)*. 
+That is great, but maybe "too much." Maybe we are only interested in comparing some of the *Metropolitan Areas(MAs)*. 
 
-The general concept of a metropolitan area (MA) is that of a core area containing a large population nucleus, together with adjacent communities that have a high degree of economic and social integration with that core.(Like a group of commuties with a hub, HK and SZ with cities in Guangdong, Guangxi.)
+The general concept of a metropolitan area (MA) is that of a core area containing a large population nucleus, together with adjacent communities that have a high degree of economic and social integration with that core.(In economics jargon: **The agglomeration economy**. A group of communities with a hub, HK and SZ with other cities in Guangdong, Guangxi.)
 
 Now, we want to compare median incomes for downtown Madison(capital city of WI) and Milwaukee (a great city with an amazing basketball team *Milwaukee Bucks*).
 
