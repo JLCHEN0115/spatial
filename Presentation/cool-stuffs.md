@@ -34,7 +34,7 @@ wi_shape_plot
 ```
 
 Here it is.
-![](Figures/wi_shape_plot.png)
+![](/Figures/wi_shape_plot.png)
 
 # Wrangle the data to plot area information (in 1000 Square Kilometer)
 wi_area <- wi_shape %>%
