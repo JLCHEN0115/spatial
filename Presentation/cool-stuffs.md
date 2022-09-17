@@ -1,6 +1,6 @@
 ## Cool Stuffs of Spatial Analysis in R
 
->In this section, I did some exploratory spatial data analysis in R. Due to the inherent complexity of spatial data, it could be nasty to deal with. However, the `sf` package provides a slik workflow in terms of spatial data, and coherent integration with `tidyverse` ecosystem. In the end of this section, I explored the rent in Wisconsin using US census API.**
+>In this section, I did some exploratory spatial data analysis in R. Due to the inherent complexity of spatial data, it could be nasty to deal with. However, the `sf` package provides a slik workflow in terms of spatial data, and coherent integration with `tidyverse` ecosystem. In the end of this section, I explored the rent in Wisconsin using US census API.
 
 ## Wisconsin Counties Areas
 
@@ -71,7 +71,7 @@ wi_area_plot
 
 ## Household Median Incomes in Wisconsin
 
->Now, we illustrate something that has more "economics flavor." We want to know the household income median across Wisconsin. This can be straightforward to do with some plain data summary, but our spatial analysis definitely spice it up.**
+>Now, we illustrate something that has more "economics flavor." We want to know the household income median across Wisconsin. This can be straightforward to do with some plain data summary, but our spatial analysis definitely spice it up.
 
 ```r
 ## add settings to optimize use with the sf package
