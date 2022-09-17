@@ -40,6 +40,7 @@ wi_shape_plot
 ```
 
 Here it is.
+
 <img src="/Figures/wi_shape_plot.png" width = 65% height = 65%>
 
 But that is just a map. We want to do something more interesting. Say, add the area information for each county in Wisconsin.
@@ -187,7 +188,7 @@ wi_tract_income <- get_acs(
 )
 ```
 
-**Important Step:** <ins>Do a spatial join on our two data sets using the `sf::st_join()` function. </ins> That is, we want each community got mapped into the correct metro area that includes it.
+**Important Step:** <ins>Do a spatial join on our two data sets using the </ins> `sf::st_join()` <ins> function. </ins> That is, we want each community got mapped into the correct metro area that includes it.
 
 ```
 wi_compare = 
