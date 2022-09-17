@@ -148,6 +148,6 @@ forecase_plot
 
 And here it is. (**Say Hi to that cute smiling guy** :smiley:)
 
-!(/Figures/forecast_plot.png)<!-- -->
+![](/Figures/forecast_plot.png)<!-- -->
 
 [^1]: The *Southern Oscillation Index* (SOI) is one measure of the large-scale fluctuations in air pressure occurring between the western and eastern tropical Pacific (i.e., the state of the Southern Oscillation) during *El Niño* and *La Niña* (They are extreme weather phenomenons) episodes.
