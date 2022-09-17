@@ -45,7 +45,7 @@ pixel_lms %>% head(10)
 lm_pars <- pixel_lms %>% 
   unnest(model_df) 
 
-head(lm_pars, 5) # regression results
+head(lm_pars, 10) # regression results
 
 # Now, we plot spatial maps of the intercept and the regression coefﬁcient associated with SOI.
 lm_pars <- left_join(lonlatmask_df, lm_pars) # Do a left join with the coordinates dataframe
