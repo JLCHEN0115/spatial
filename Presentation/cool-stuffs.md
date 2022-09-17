@@ -1,6 +1,6 @@
 ## Cool Stuffs of Spatial Analysis in R
 
-*In this section, I did some exploratory spatial data analysis in R. Due to the inherent complexity of spatial data, it could be nasty to deal with. However, the **sf** package provides a slik workflow in terms of spatial data, and coherent integration with **tidyverse** ecosystem. In the end of this section, I explored the rent in Wisconsin using US census API.*
+*In this section, I did some exploratory spatial data analysis in R. Due to the inherent complexity of spatial data, it could be nasty to deal with. However, the `sf` package provides a slik workflow in terms of spatial data, and coherent integration with `tidyverse` ecosystem. In the end of this section, I explored the rent in Wisconsin using US census API.*
 
 ```r
 # Download (if needed) and load package management tools 
@@ -12,14 +12,14 @@ if (!require("pacman")) install.packages("pacman")
 pacman::p_load(sf, tidyverse, data.table, hrbrthemes, lwgeom, rnaturalearth, maps, mapdata, spData, tigris, tidycensus, leaflet, tmap, tmaptools) 
 ```
 
-The **sf** is an important package in this illustration.[^1]  **tidycensus** and **tigris** are packages for the ease of using US census data. **tidyverse** contains the workhorse packages for (almost every) data analysis task in R. The **maps** and **mapdata** packages have detailed county- and state/province-level data for several individual nations.
+The `sf` is an important package in this illustration.[^1]  `tidycensus` and `tigris` are packages for the ease of using US census data. `tidyverse` contains the workhorse packages for (almost every) data analysis task in R. The `maps` and `mapdata` packages have detailed county- and state/province-level data for several individual nations.
 
-Now, we read the Shapefile of Wisconsin using **sf::st_read**.
+Now, we read the Shapefile of Wisconsin using `sf::st_read`.
 ```r
 ## Read Shapefile[^2] in R using sf::st_readrm
 wi_shape <- st_read("~/Documents/test-play/Just-Playing/WI_CensusTL_Counties_2019/WI_CensusTL_Counties_2019.shp", quiet = TRUE)
 ```
-Using the Shapefile, we can draw a simple plot using **ggplot2** (one of my favourite package in R).
+Using the Shapefile, we can draw a simple plot using `ggplot2` (one of my favourite package in R).
 
 ```r
 ## Counties of Wisconsin Plot
@@ -34,7 +34,7 @@ wi_shape_plot
 ```
 
 Here it is.
-![](Figures/wi_shape_plot.png)<!-- -->
+![](Figures/wi_shape_plot.png)
 
 # Wrangle the data to plot area information (in 1000 Square Kilometer)
 wi_area <- wi_shape %>%
