@@ -1,8 +1,8 @@
 # Spatial Statistics
 
-***For analysis about tourism and economic development with spatial economics/ econometrics, the paper [Tourism and Economic Development: Evidence from Mexico’s Coastline](https://www.aeaweb.org/articles?id=10.1257/aer.20161434) by Benjamin Faber and Cecile Gaubert should be a great one (in my personal opinion.)***
+***For analysis about tourism and economic development with spatial economics/ econometrics (also the spillover effects), the paper [Tourism and Economic Development: Evidence from Mexico’s Coastline](https://www.aeaweb.org/articles?id=10.1257/aer.20161434) by Benjamin Faber and Cecile Gaubert should be a great one (in my personal opinion.)***
 
-> This repository is mainly base on [the lecture notes by Grant McDermott](https://github.com/uo-ec607) as well as the book [Spatio-Temporal Statistics with R](https://spacetimewithr.org/) by  Christopher, Andrew and Noel. Please see the original sources for lisence.
+> This repository is mainly base on [the lecture notes by Grant McDermott](https://github.com/uo-ec607) as well as the book [Spatio-Temporal Statistics with R](https://spacetimewithr.org/) by  Christopher, Andrew and Noel. Please see the original sources for lisenses.
 
 ## Three Goals for Spatio-temporal Statistical Modelling
 
@@ -16,7 +16,7 @@
 
 **There are four steps for spatial(-temporal) statistical analysis.**
 
-- **STEP 1** [Explotary Data Analysis](/Presentation/cool-stuffs.md)
+- **STEP 1** [Exploratory Data Analysis](/Presentation/cool-stuffs.md)
 
     Usually we start with some visualization and summary to examine the dependent structure and potential relations across time and space.
 
@@ -24,13 +24,13 @@
 
     These are usually very basic statistical models that *does not* explicitly account for spatio-temporal structure. e.g., OLS, Generalized Linear Models or Lasso(still not account the structure explicitly).
 
-    There is a chance to accomplish the goal with these methods, but most likely, they cannot ot we want to take full advantage of our spatial-temporal data. This calls for more specialized spatial-temporal models.
+    There is a chance to accomplish the goal with these methods, but most likely, they cannot or we want to take full advantage of our spatial-temporal data. This calls for more specialized spatial-temporal models.
 
 - **STEP 3** [Spatio-Temporal Models]
 
-    - **Desciptive Approach**
+    - **Descriptive Approach**
 
-    In Descriptive Spatio-Temporal Statistical Models, the dependent random process is defined by moment conditions of its marginal distribution. It does not particularly concern with the causal structure that lead to dependence in the random process. This is the traditional way and works good for prediction and inference (construcing confidence sets).
+    In Descriptive Spatio-Temporal Statistical Models, the dependent random process is defined by moment conditions of its marginal distribution. It does not particularly concern with the causal structure that lead to dependence in the random process. This is the traditional way and works good for prediction and inference (constructing confidence sets).
 
     - **Dynamic Approach**
 
