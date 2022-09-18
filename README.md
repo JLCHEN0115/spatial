@@ -1,4 +1,6 @@
-# Spatial Statistics/ Econometrics
+# Spatial Statistics
+
+***For analysis about tourism and economic development with spatial economics/ econometrics, the paper [Tourism and Economic Development: Evidence from Mexico’s Coastline](https://www.aeaweb.org/articles?id=10.1257/aer.20161434) by Benjamin Faber and Cecile Gaubert should be a great one (in my personal opinion.)***
 
 > This repository is mainly base on [the lecture notes by Grant McDermott](https://github.com/uo-ec607) as well as the book [Spatio-Temporal Statistics with R](https://spacetimewithr.org/) by  Christopher, Andrew and Noel. Please see the original sources for lisence.
 
